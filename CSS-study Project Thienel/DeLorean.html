@@ -2,17 +2,118 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>DeLorean</title>
-</head>
+    <title>Example Template- 2 Columns</title>
+    <style>
+        body {
+            background-color: darkgrey;
+        }
 
+        .container {
+            color: black;
+            background-color: white;
+            width: 80%;
+        }
+
+        #header {
+            width: 100px;
+            height: 100px;
+            /*background-color: cyan;*/
+            text-align: center;
+            vertical-align: middle;
+            font-size: 75px;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+            border-right: 1px solid #bbb;
+        }
+
+        li a {
+            display: block;
+            color: yellow;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        #content {
+            float: left;
+            Width: 75%;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        #sidebar {
+
+        }
+
+        #footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 25px;
+            background-color: lightblue;
+        }
+        div#footer a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
 <body>
-<h1>DeLorean</h1>
-<li><b>1981-1983</li>
-</b>
-<ul>The DMC DeLorean (often referred to as the "DeLorean") is a rear-engine, two-door, two-passenger sports car
-    manufactured and marketed by John DeLorean's DeLorean Motor Company (DMC) for the American market from 1981 to
-    1983—ultimately the only car brought to market by the fledgling company.
-</ul>
-<img src="../pics/Delorean_DMC-12_side.jpg" height="571" width="800"/> width="830px" height="687px"/>
+<div class="container">
+    <div class="row">
+        <div id="header">
+            DeLorean <!--2 Column CSS Template-->
+        </div>
+    </div>
+    <div class="row">
+        <ul>
+            <li><a href="CSSProjectTHIENEL.html">Home</a></li>
+            </li>
+        </ul>
+    </div>
+    <div class="row">
+        <div id="content">
+            The DMC DeLorean (often referred to as the "DeLorean") is a rear-engine, two-door, two-passenger sports car
+            manufactured and marketed by John DeLorean's DeLorean Motor Company (DMC) for the American market from 1981 to
+            1983—ultimately the only car brought to market by the fledgling company.
+
+            <img src="../pics/Delorean_DMC-12_side.jpg" height="350" width="500"/></div>
+
+        <div id="sidebar">
+            Sidebar <br/>Ads<br/>Ads
+        </div>
+    </div>
+    <div class="row">
+        <div id="footer">
+            Copyright 2021 | Web Design | <a href="mailto:katelyn.thienel@vtsd.com">katelyn.thienel@vtsd.com</a>
+        </div>
+    </div>
+
+</div>
 </body>
 </html>
